@@ -1,0 +1,40 @@
+.form {
+	width: 300px;
+	background: #000;
+}
+
+.form__header {
+	padding: 10px;
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid gray;
+}
+
+.form__close-btn {
+	padding: 10px;
+	cursor: pointer;
+}
+
+.form__body {
+	padding: 10px;
+	color: #fff;
+	display: flex;
+	flex-flow: column;
+}
+
+.form__input {
+	padding: 10px;
+	margin: 5px 0;
+}
+
+.form__message {
+	margin: 5px 0;
+	padding: 10px;
+	resize: vertical;
+}
+
+.form__send {
+	margin: 10px;
+}

@@ -1,0 +1,45 @@
+.modal-btn {
+	margin: 20px;
+	height: 40px;
+	padding: 0 20px;
+	line-height: 40px;
+	text-transform: uppercase;
+	text-align: center;
+	background: rgba(#000, .8);
+	color: rgba(#fff, .8);
+	border-radius: 10px;
+	cursor: pointer;
+	transition: all .3s;
+	&:hover {
+		background: #000;
+		color: #fff;
+	}
+}
+
+.modal {
+	position: fixed;
+	left: 0;
+	top: -9999px;
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgba(#000, .5);
+	opacity: 0;
+	transition: opacity .3s;
+}
+
+.modal__form {
+	transition: margin-top .5s;
+	margin-top: -600px;
+}
+
+.modal_active {
+	top: 0px;
+	opacity: 1;
+	.modal__form {
+		margin-top: 0px;
+	}
+}
+

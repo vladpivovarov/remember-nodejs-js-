@@ -1,0 +1,21 @@
+extends ../template.pug
+
+block title
+	title #{title}
+
+block content
+	button.modal-btn Оставить сообщение
+	.modal
+		form(name="modalForm").form.modal__form
+			.form__header
+				.form__title Ваше сообщение
+				.form__close-btn
+					i.fa.fa-times(aria-hidden="true")
+			.form__body
+				input.form__input(type="text" name="names" placeholder="name")
+				input.form__input(type="text" name="surname" placeholder="surname")
+				textarea.form__message(name="message" placeholder="message")
+			.form__footer
+				input.form__input.form__send(type="submit" value="Отправить")
+	div(id="homework-container")
+

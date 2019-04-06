@@ -1,0 +1,13 @@
+extends ../template.pug
+
+block title
+	title #{title}
+
+block content
+	div(id = "homework-container")
+		.search
+			input(type="text").search__input
+			.search__block
+				.search__status Загрузка ...
+				ul.search__list
+	
